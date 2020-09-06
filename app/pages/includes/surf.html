@@ -1,0 +1,519 @@
+<div class="surf" id='surfpart'>
+    <div class="container" style='background-image: url(img/bglocation.png);'>
+        <div class="surf__losung section-losung-block">
+            <div class="section-losung-block__bg-losung losung-200-800-lightgray">
+                surf
+                <h3 class="section-losung-block__main-title title-lineunder-80-800-white wow animate__animated animate__fadeInLeft"
+                    data-wow-offset='150'>surf</h3>
+            </div>
+        </div>
+        <div class="surf__location-title section-title-block-right wow animate__animated animate__fadeInRight"
+            data-wow-offset='150'>
+            <div class="section-title-block-right__top-text subtitle-lineleft-22-400-gray">current location</div>
+            <div class="section-title-block-right__bottom-text title-40-800-white">California <span
+                    class='section-title-block-right--space'>|</span> USA</div>
+        </div>
+
+        <div class="surf__slider-map wow animate__animated animate__zoomIn" data-wow-offset='320'
+            style='background-image: url(../../img/map.png);'>
+
+            <div class="surf__shuffle-buttons">
+                <button id='all' class='surf__shuffle-button title-18-800-white shuffle-active-button'
+                    data-checked-place='all'>All</button>
+                <button id='na' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='na'>N.America</button>
+                <button id='sa' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='sa'>S.America</button>
+                <button id='africa' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='africa'>Africa</button>
+                <button id='asia' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='asia'>Asia</button>
+                <button id='europe' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='europe'>Europe</button>
+                <button id='australia' class='surf__shuffle-button title-18-800-white'
+                    data-checked-place='australia'>Australia</button>
+            </div>
+
+            <div class="surf__map-dots">
+                <div class="map-dot map-dot--1 wow animate__animated animate__zoomIn" data-wow-delay='1s'
+                    data-wow-offset='50' data-continent='na'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Hawai Beach</div>
+                                <div class="map-dot__content-subtitle">USA</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">6 - 11</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+4.3</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">4.2 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">19.566075, -154.898526</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--2 wow animate__animated animate__zoomIn" data-wow-delay='1.2s'
+                    data-wow-offset='50' data-continent='na'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Malibu Beach</div>
+                                <div class="map-dot__content-subtitle">USA</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">11 - 17</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+2.9</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">8 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">34.022825, -118.779220</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--3 wow animate__animated animate__zoomIn" data-wow-delay='1.4s'
+                    data-wow-offset='50' data-continent='na'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Sosua</div>
+                                <div class="map-dot__content-subtitle">Dominicana</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">5 - 9</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+7.6</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">6 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">19.757222, -70.517199</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--4 wow animate__animated animate__zoomIn" data-wow-delay='1.6s'
+                    data-wow-offset='50' data-continent='sa'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Macumba Beach</div>
+                                <div class="map-dot__content-subtitle">Brazil</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">10 - 15</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+6.1</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">7 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">-23.034190, -43.488520</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--5 wow animate__animated animate__zoomIn" data-wow-delay='1.6s'
+                    data-wow-offset='50' data-continent='europe'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Rochebonne Beach</div>
+                                <div class="map-dot__content-subtitle">France</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">8 - 11</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+7.4</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">8 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">48.660757, -1.995439</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--6 wow animate__animated animate__zoomIn" data-wow-delay='1.8s'
+                    data-wow-offset='50' data-continent='africa'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Humewood Beach</div>
+                                <div class="map-dot__content-subtitle">South Africa</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">11 - 17</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+6.3</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">6 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">-33.979548, 25.656428</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--7 map-dot--active wow animate__animated animate__zoomIn"
+                    data-wow-offset='50' data-wow-delay='2s' data-continent='asia'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Cherai Beach</div>
+                                <div class="map-dot__content-subtitle">India</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">10 - 14</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+8.1</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">6 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">10.141550, 76.178213</div>
+                    </div>
+                </div>
+                <div class="map-dot map-dot--8 wow animate__animated animate__zoomIn" data-wow-delay='2.2s'
+                    data-wow-offset='50' data-continent='australia'>
+                    <div class="map-dot__circle"></div>
+                    <div class="map-dot__content">
+                        <div class="map-dot__info-row">
+                            <div class="map-dot__content-head">
+                                <div class="map-dot__content-title">Airlie Beach</div>
+                                <div class="map-dot__content-subtitle">Austrilia</div>
+                            </div>
+                            <a href="#" target="_self" class="map-dot__content-link svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-dot__categories-row">
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon1.png" alt="">
+                                <div class="map-dot__content-number">9 - 13</div>
+                                <div class="map-dot__content-name">Surf (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon2.png" alt="">
+                                <div class="map-dot__content-number">+2.3</div>
+                                <div class="map-dot__content-name">Tide (FT)</div>
+                            </div>
+                            <div class="map-dot__content-item">
+                                <img src="../../img/map-icon3.png" alt="">
+                                <div class="map-dot__content-number">4 se</div>
+                                <div class="map-dot__content-name">wind (kts)</div>
+                            </div>
+                        </div>
+                        <div class="map-dot__geolocation">-20.267245, 148.718612</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="surf__slider">
+            <div class="surf__slider-wrapper">
+                <div class="surf__slider-item swiper-slide surf-slide wow animate__animated animate__fadeInLeft"
+                    data-wow-delay='0.3s' data-wow-offset='50' style="background-image:url(img/surf-slide1.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Hawai Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Hawai <span>|</span> USA</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide wow animate__animated animate__fadeInLeft"
+                    data-wow-delay='0.6s' data-wow-offset='80' style="background-image:url(img/surf-slide2.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Malibu Beach</div>
+                        <div class="surf-slide__location text-18-300-white">California <span>|</span> USA</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide wow animate__animated animate__fadeInLeft"
+                    data-wow-delay='0.9s' data-wow-offset='50' style="background-image:url(img/surf-slide3.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Sosua</div>
+                        <div class="surf-slide__location text-18-300-white">Playa Alicia <span>|</span> Dominicana</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide wow animate__animated animate__fadeInLeft"
+                    data-wow-delay='1.2s' data-wow-offset='80' style="background-image:url(img/surf-slide4.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Rochebonne Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Saint-Malo <span>|</span> France</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide"
+                    style="background-image:url(img/surf-slide5.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Humewood Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Summerstrand <span>|</span> South Africa
+                        </div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide"
+                    style="background-image:url(img/surf-slide6.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Cherai Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Kuzhuppilly <span>|</span> India</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide"
+                    style="background-image:url(img/surf-slide7.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Macumba Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Rio <span>|</span> Brazil</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="surf__slider-item swiper-slide surf-slide"
+                    style="background-image:url(img/surf-slide8.jpg)">
+                    <div class="surf-slide__inner">
+                        <div class="surf-slide__name title-40-800-white">Airlie Beach</div>
+                        <div class="surf-slide__location text-18-300-white">Queensland <span>|</span> Australia</div>
+                        <div class="surf-slide__button logo-gorizontal">
+                            <div class="logo-gorizontal__static title-40-800-white">surf</div>
+                            <div class="logo-gorizontal__active title-40-800-white">view</div>
+                            <a href="#" target="_self" class="svg-link">
+                                <svg class="white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="surf__slider-arrows slider-arrows wow animate__animated animate__fadeInRight"
+                data-wow-offset='50'>
+                <svg class="surf-prev-slide white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid">
+                    <path
+                        d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" />
+                </svg>
+                <svg class="surf-next-slide white-arrow" width="25" height="21" viewBox="0 0 25 21" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid">
+                    <path
+                        d="M15.3688 19.5874L23.5824 11.4366C24.3348 10.6854 24.3348 9.46621 23.5824 8.71758L15.3688 0.561968C14.6101 -0.189173 13.3821 -0.185404 12.6234 0.561968C11.8723 1.31437 11.8723 2.52856 12.6234 3.28096L17.4285 8.04838L2.01437 8.04838C0.900866 8.04838 -1.90735e-05 8.94802 -1.90735e-05 10.0615C-1.90735e-05 11.1738 0.900866 12.0747 2.01437 12.0747L17.4575 12.0747L12.6234 16.8672C11.8723 17.6183 11.8723 18.8338 12.6234 19.5849C13.3809 20.3373 14.6089 20.3386 15.3688 19.5875V19.5874Z" />
+                </svg>
+            </div>
+
+        </div>
+    </div>
+</div>

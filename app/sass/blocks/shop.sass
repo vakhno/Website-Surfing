@@ -1,0 +1,157 @@
+.shop
+    margin-bottom: 110px 
+    &__losung
+        transform: translateX(-70px)
+        margin-bottom: 14px
+    &__slider 
+    &__slider-wrapper 
+    &__slider-item
+        &:not(.swiper-slide-active)
+            opacity: 0 !important 
+    &__slider-arrows
+        position: absolute
+        right: 80px
+        top: -50px
+
+.shop-slide
+    background-repeat: no-repeat
+    background-position: right center
+    &__product 
+        display: grid
+        grid-template-columns: auto auto auto
+        justify-content: space-between
+    &__product-description
+        padding-left: 133px
+        margin-right: 90px
+        align-self: center
+    &__location-title
+        margin-bottom: 23px
+        max-width: 340px
+        line-height: 46px
+    &__product-rating
+        display: flex
+        margin-bottom: -7px
+        // position: absolute
+        // padding-left: 225px
+        // padding-top: 23px 
+    &__product-star
+        margin-left: -22px
+        &:first-child
+            margin-left: -14px
+    &__product-info 
+        display: flex
+        margin-right: 138px
+    &__product-photo
+        position: relative
+    &__surfboard
+        width: 280px
+        max-width: 230px
+        height: 695px
+    &__product-description-point-toright 
+        position: absolute
+    &__product-description-point-toleft
+        position: absolute
+    &__product-description-point-toright
+        .shop-slide__product-description-text
+            display: none
+            width: 260px
+            padding-left: 104px
+            &::before
+                content: ''
+                position: absolute
+                width: 80px
+                height: 1px
+                background-color: $white
+                opacity: 0.5
+                left: 30px
+                top: 50%
+    &__product-description-point-toleft
+        .shop-slide__product-description-text
+            display: none
+            width: 260px
+            position: absolute
+            left: -367px
+            padding-right: 104px
+            &::before
+                content: ''
+                position: absolute
+                width: 80px
+                height: 1px
+                background-color: $white
+                opacity: 0.5
+                right: 10px
+                top: 50%
+    &__product-description-point--1
+        top: 202px
+        right: 36px
+    &__product-description-point--2
+        top: 295px
+        left: -5px
+    &__product-description-point--3
+        bottom: 65px
+        left: 53px
+    &__product-description-point--21
+        top: 230px
+        right: 111px
+    &__product-description-point--22
+        top: 335px
+        left: 55px
+    &__product-description-point--23
+        bottom: 55px
+        left: 98px
+    &__product-description-wrapper
+        position: absolute
+        display: flex
+        height: 100%
+        align-items: center
+    &__product-description-circle
+        position: relative
+        width: 20px
+        height: 20px
+        background-color: $white
+        border-radius: 50%
+    &__extra-products
+        margin-right: 80px
+        align-self: flex-end
+    &__product-price
+        margin-bottom: 72px
+        display: flex
+        .shop-slide__product-price--coins
+            align-self: flex-start
+            justify-self: flex-end
+            font-size: 18px
+            margin-left: 5px
+    &__buy-button
+        width: 112px
+        margin: 0 auto
+        &:hover
+            .logo-gorizontal__active
+                right: 170px !important
+            .logo-gorizontal__static
+                &::before
+                    left: -90% !important
+
+.active-product-point
+    .shop-slide__row
+        &:last-of-type
+            transform: translate(-50%, -50%) rotate(0deg)
+
+
+.shop-slide__product-description-circle.active-product-point + .shop-slide__product-description-text
+    transition: 0.3s
+    display: flex !important
+
+
+.shop-slide__row
+    transition: 0.3s
+    pointer-events: none
+    backface-visibility: hidden
+    position: absolute
+    background-color: $accent
+    width: 12px
+    height: 2px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(0deg)
+    &:last-of-type
+        transform: translate(-50%, -50%) rotate(90deg)
