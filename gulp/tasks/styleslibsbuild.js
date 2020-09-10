@@ -1,6 +1,7 @@
 const gulp         = require( 'gulp' ); 
 const cleanCSS     = require( 'gulp-clean-css' );
 const sass         = require( 'gulp-sass' );
+const concat 		 = require( 'gulp-concat' );
 const rename       = require( 'gulp-rename' );  
 const path         = {
 	dist: { //Куда складывать готовые после сборки файлы
@@ -28,16 +29,21 @@ const path         = {
 	clean: 'dist/'
 };
 
+const libsScripts = [
+    'node_modules/swiper/swiper-bundle.min.css',
+    'node_modules/animate.css/animate.min.css'
+];
 
-module.exports = function styleslibsbuild() { 
-	return gulp.src( path.app.stylelibs )
-		.pipe( sass(/*{includePaths: require("node-normalize-scss").includePaths }*/) ) 
-   	.pipe( cleanCSS({ 
-            debug: true, 
-            compatibility: '*' 
-        }, 
-            details => { console.log( `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}` ) }
-      ))
-		.pipe( rename( { suffix: '.min' } ) )
-		.pipe( gulp.dest( path.dist.css ) ) 
+module.exports = function styleslibsbuild(cb) {
+    return libsScripts.length
+        ? gulp.src(libsScripts)
+            .pipe(concat('libs.min.css'))
+   			.pipe( cleanCSS({ 
+      			debug: true, 
+      			compatibility: '*' 
+      		}, 
+               details => { console.log( `${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}` ) }
+      		))
+            .pipe(gulp.dest(path.dist.css))
+        : cb();
 };
