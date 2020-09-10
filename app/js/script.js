@@ -153,49 +153,51 @@ function getGuestsQuantity() {
 function hotelFinalPrice(e) {
     let guestsQuantity = +getGuestsQuantity();
     let nightsQuantity = +getNightsQuantity();
-    let factor = +e.path[4].children[3].children[1].dataset.hotelPrice;
+    let path = e.path || (e.composedPath && e.composedPath());
+    let factor = +path[4].children[3].children[1].dataset.hotelPrice;
     let finalPrice = guestsQuantity * nightsQuantity * factor;
 
-    e.path[4].children[3].children[1].dataset.hotelFinalPrice = finalPrice;
-    e.path[4].children[3].children[1].textContent = `$${finalPrice} USD`
+    path[4].children[3].children[1].dataset.hotelFinalPrice = finalPrice;
+    path[4].children[3].children[1].textContent = `$${finalPrice} USD`
 }
 
 function nightRemove(e) {
     let defaultValue = +getNightsQuantity();
+    let path = e.path || (e.composedPath && e.composedPath());
     if (defaultValue >= 2) {
         defaultValue -= 1;
-        e.path[2].children[0].dataset.hotelNightsCount = defaultValue;
-        e.path[2].children[0].textContent = (defaultValue !== 1) ? `${defaultValue} nights` : `${defaultValue} night`;
+        path[2].children[0].dataset.hotelNightsCount = defaultValue;
+        path[2].children[0].textContent = (defaultValue !== 1) ? `${defaultValue} nights` : `${defaultValue} night`;
     }
 }
 
 function nightAdd(e) {
     let defaultValue = +getNightsQuantity();
-    console.log(e.path)
+    let path = e.path || (e.composedPath && e.composedPath());
     if (defaultValue <= 999) {
         defaultValue += 1;
-        e.path[2].children[0].dataset.hotelNightsCount = defaultValue;
-        e.path[2].children[0].textContent = `${defaultValue} nights`;
+        path[2].children[0].dataset.hotelNightsCount = defaultValue;
+        path[2].children[0].textContent = `${defaultValue} nights`;
     }
 }
 
 function guestAdd(e) {
     let defaultValue = +getGuestsQuantity();
-
+    let path = e.path || (e.composedPath && e.composedPath());
     if (defaultValue <= 999) {
         defaultValue += 1;
-        e.path[2].children[0].dataset.hotelGuestsCount = defaultValue;
-        e.path[2].children[0].textContent = `${defaultValue} quests`;
+        path[2].children[0].dataset.hotelGuestsCount = defaultValue;
+        path[2].children[0].textContent = `${defaultValue} quests`;
     }
 }
 
 function guestRemove(e) {
     let defaultValue = +getGuestsQuantity();
-
+    let path = e.path || (e.composedPath && e.composedPath());
     if (defaultValue >= 2) {
         defaultValue -= 1;
-        e.path[2].children[0].dataset.hotelGuestsCount = defaultValue;
-        e.path[2].children[0].textContent = (defaultValue !== 1) ? `${defaultValue} quests` : `${defaultValue} quest`;
+        path[2].children[0].dataset.hotelGuestsCount = defaultValue;
+        path[2].children[0].textContent = (defaultValue !== 1) ? `${defaultValue} quests` : `${defaultValue} quest`;
     }
 }
 
@@ -255,6 +257,3 @@ document.querySelector('.surf__shuffle-buttons').addEventListener('click', event
         hideSurfCards(event.target);
     }
 })
-
-
-// console.dir(document.body.clientWidth)
