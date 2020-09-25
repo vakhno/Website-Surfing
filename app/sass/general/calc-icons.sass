@@ -1,0 +1,26 @@
+.icon-plus
+    cursor: pointer
+    svg
+        @include none-event
+    &:hover
+        .svg-calculator-icon
+            path
+                fill: lighten($accent, 20%)
+    &:active
+        .svg-calculator-icon
+            path
+                fill: darken($accent, 50%)
+
+.icon-minus
+    cursor: pointer
+    padding: 5px 0
+    svg
+        @include none-event
+    &:hover
+        .svg-calculator-icon
+            path
+                fill: lighten($accent, 20%)
+    &:active
+        .svg-calculator-icon
+            path
+                fill: darken($accent, 50%)

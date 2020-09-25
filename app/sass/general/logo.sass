@@ -1,0 +1,85 @@
+.logo-vertical
+    background-color: $accent
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    &__static
+        transform: rotate(270deg)
+        &::before
+            animation: width 0.5s forwards
+    &__active
+        z-index: -10 
+        transition: 0.5s
+        position: absolute
+        top: 0
+        transform: rotate(270deg)
+        @include none-event
+    &:hover
+        .logo-vertical__static
+            &::before
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                content: ''
+                height: 1px
+                background-color: $white
+
+.logo-gorizontal
+    cursor: pointer
+    padding: 0 17px
+    height: 80px
+    background-color: $accent
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__static
+        margin-right: 16px
+        &::before
+            animation: width 0.5s forwards
+    &__active
+        transition: 0.5s
+        z-index: -10
+        position: absolute
+        right: 0
+        @include none-event
+    &:hover
+        .logo-gorizontal__static
+            &::before
+                top: 50%
+                transform: translateY(-50%)
+                position: absolute
+                content: ''
+                height: 1px
+                background-color: $white
+
+.logo
+    cursor: pointer
+    padding: 0 17px
+    height: 80px
+    width: 112px
+    background-color: $accent
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__static
+        &::before
+            animation: width 0.5s forwards
+    &__active
+        transition: 0.5s
+        z-index: -10
+        position: absolute
+        right: 0
+        @include none-event
+    &:hover
+        .logo__active
+            right: 130px
+        .logo__static
+            &::before
+                top: 50%
+                transform: translateY(-50%)
+                position: absolute
+                content: ''
+                height: 1px
+                background-color: $white
+                left: -8%

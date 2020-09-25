@@ -1,0 +1,25 @@
+.slider-arrows
+    display: grid
+    grid-template-columns: auto auto
+    column-gap: 20px
+
+.white-arrow
+    z-index: 100
+    fill: $white
+    transition: 0.3s
+    cursor: pointer
+    outline: none
+    border: none
+    &:hover
+        transition: 0.5s
+        fill: $accent
+
+.gray-arrow
+    z-index: 100
+    fill: $gray
+    cursor: pointer
+    outline: none
+    border: none
+    &:hover
+        transition: 0.5s
+        fill: $accent

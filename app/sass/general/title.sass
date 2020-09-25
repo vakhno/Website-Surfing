@@ -1,0 +1,34 @@
+.title-80-800-white 
+    @include text-uppercase-white(80px, 800, 86px)
+
+.title-40-800-white
+    @include text-uppercase-white(40px, 800, 40px)
+
+.title-lineunder-80-800-white
+    &::before
+        content: ''
+        position: absolute
+        width: 80px
+        top: 0
+        right: 0
+        height: 1px
+        background-color: $accent
+    @include text-uppercase-white(80px, 800, 86px)
+
+.title-52-800-white
+    @include text-uppercase-white(52px, 800, 86px)
+
+.title-18-800-white
+    @include text-uppercase-white(18px, 800)
+
+.title-72-800-white
+    @include text-uppercase-white(72px, 800, 64px)
+
+.title-24-800-white
+    @include text-uppercase-white(24px, 800)
+
+.title-60-800-white
+    @include text-uppercase-white(60px,  800)
+
+.title-28-800-white
+    @include text-uppercase-white(28px, 800)

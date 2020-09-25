@@ -1,0 +1,36 @@
+.aside
+    z-index: 30
+    position: fixed
+    top: 0
+    left: 0
+    height: 100vh
+    text-align: center
+    border-right: 1px solid transparent
+    transition: 0.5s
+    &__logo
+        width: 150px
+        height: 170px
+        padding: 10px
+        &:hover
+            .logo-vertical__active
+                top: 180px
+            .logo-vertical__static
+                &::before
+                    left: -19%
+    &__menu
+        transition: 0.5s
+        position: absolute
+        bottom: 0
+        left: -200px
+    &__event-date
+        margin-bottom: 45px
+        color: #fff
+
+.active-aside-menu.aside
+    height: 100%
+    transition: 0.5s linear
+    border-right-color: $gray
+    background-color: rgba(black, 0.8)
+    .aside__menu 
+        right: 0 !important
+        left: 0 !important

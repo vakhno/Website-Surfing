@@ -1,0 +1,33 @@
+.subtitle-lineleft-22-400-gray
+    letter-spacing: 7.33333px
+    position: relative
+    padding-left: 103px
+    display: inline-block
+    &::before
+        position: absolute
+        left: 0
+        top: 50%
+        content: ''
+        width: 80px
+        height: 1px
+        background-color: rgba($white, 0.5)
+    @include text-uppercase-gray(22px, 400, 32px)
+
+.subtitle-lineright-22-400-gray
+    letter-spacing: 7.33333px
+    position: relative
+    padding-right: 103px
+    display: inline-block
+    &::after
+        position: absolute
+        right: 0
+        top: 50%
+        content: ''
+        width: 80px
+        height: 1px
+        background-color: rgba($white, 0.5)
+    @include text-uppercase-gray(22px, 400, 32px)
+
+.subtitle-16-300-white
+    letter-spacing: 1.4px
+    @include text(16px, 300, 19px)

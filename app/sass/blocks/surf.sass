@@ -1,229 +1,239 @@
 .surf
-    .container
-        position: relative
-        background-repeat: no-repeat
-        background-position: right 50px
-        background-size: auto
-        margin-bottom: 180px
-    &__losung
-        transform: translateX(-70px)
-        margin-bottom: 6px
-    &__location-title
-        text-align: right
-        padding-right: 80px
-        justify-content: end
-    &__slider 
-        width: 100%
-        height: 100%
-        overflow: hidden
-        position: relative
-    &__slider-wrapper
-        position: relative
-        width: 100%
-        height: 100%
-        display: flex
-        margin-top: 140px
-    &__slider-item
-        position: relative
-    &__slider-arrows
-        position: absolute
-        top: 50px
-        right: 80px
-    &__slider-map 
-        max-width: 1200px
-        min-height: 635px
-        margin: 0 auto
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
-        margin-bottom: 58px
-    &__shuffle-buttons
-        display: none
-    &__map-dots
-        display: flex
+	.container
+		position: relative
+		background-repeat: no-repeat
+		background-position: right 50px
+		background-size: auto
+	&__losung
+		transform: translateX(-70px)
+		margin-bottom: 6px
+	&__location-title
+		text-align: right
+		padding-right: 80px
+		justify-content: end
+	&__slider 
+		width: 100%
+		height: 100%
+		overflow: hidden
+		position: relative
+	&__slider-wrapper
+		position: relative
+		width: 100%
+		height: 100%
+		display: flex
+		margin-top: 140px
+	&__slider-item
+		position: relative
+	&__slider-arrows
+		position: absolute
+		top: 50px
+		right: 80px
+	&__slider-map 
+		max-width: 1200px
+		min-height: 635px
+		margin: 0 auto
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		margin-bottom: 58px
+	&__shuffle-buttons
+		display: none
+	&__map-dots
+		display: flex
+        
 .map-dot
-    position: relative
-    &__circle
-        pointer-events: none
-        backface-visibility: hidden
-        width: 24px
-        height: 24px
-        background-color: $accent
-        border-radius: 50%
-        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.83)
-    &__content
-        display: none
-        z-index: 10
-    &--active
-        .map-dot__content
-            position: absolute
-            margin-bottom: 50px
-            transform: translateX(-44%)
-            bottom: 0
-            width: 283px
-            min-height: 216px
-            display: flex !important
-            padding: 28px 32px 31px 32px
-            flex-direction: column
-            box-sizing: border-box
-            justify-content: space-between
-            background: rgba(#0F1010, 0.7)
-            border-radius: 6px
-        .map-dot__circle
-            &::before
-                content: ''
-                position: absolute
-                width: 0
-                height: 0
-                border-bottom: 20px $accent solid
-                border-left: 12px solid transparent
-                border-right: 12px solid transparent
-                bottom: 15px
-                border-radius: 10px
-    &__categories-row
-        display: flex
-        justify-content: space-between
-    &__info-row
-        display: flex
-        justify-content: space-between
-        margin-bottom: 30px
-    &__geolocation
-        display: none
-        font-family: $fontFira
-        font-weight: 400
-        font-size: 15px
-        letter-spacing: 1.7px
-        color: $gray
-    &__content-head 
-    &__content-title
-        font-family: $fontFira
-        font-weight: 800
-        font-size: 18px
-        line-height: 26px
-        color: $white
-        text-transform: uppercase
-        position: relative
-        margin-bottom: 14px
-        &::after
-            content: ''
-            position: absolute
-            width: 80px
-            height: 1px
-            background-color: $accent
-            left: 0
-            bottom: -5px
-    &__content-subtitle 
-        font-family: $fontFira
-        font-weight: 400
-        font-size: 16px
-        line-height: 19px
-        color: $white
-    &__content-link
-        margin-top: 4px 
-    &__content-item
-        text-align: center
-        img
-            margin-bottom: 8px
-    &__content-number
-        font-family: $fontFira
-        font-weight: 800
-        font-size: 16px
-        line-height: 23px
-        color: $white
-    &__content-name 
-        font-family: $fontFira
-        font-weight: 300
-        font-size: 10px
-        line-height: 12px
-        text-transform: uppercase
-        color: $white
+	position: relative
+	cursor: pointer
+	&:hover
+		.map-dot__circle
+			transition: 0.3s
+			background-color: lighten($accent, 20%)
+			&::before
+				transition: 0.3s
+				border-bottom-color: lighten($accent, 20%)
+	&__circle
+		width: 24px
+		height: 24px
+		background-color: $accent
+		border-radius: 50%
+		box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.83)
+		transition: 0.3s
+		@include none-event
+	&__content
+		cursor: auto
+		display: none
+		z-index: 10
+	&--active
+		z-index: 100
+		.map-dot__content
+			position: absolute
+			margin-bottom: 50px
+			transform: translateX(-44%)
+			bottom: 0
+			width: 283px
+			min-height: 216px
+			display: flex !important
+			padding: 28px 32px 31px 32px
+			flex-direction: column
+			box-sizing: border-box
+			justify-content: space-between
+			background: rgba(#0F1010, 0.7)
+			border-radius: 6px
+		.map-dot__circle
+			&::before
+				transition: 0.3s
+				content: ''
+				position: absolute
+				width: 0
+				height: 0
+				border-bottom: 20px $accent solid
+				border-left: 12px solid transparent
+				border-right: 12px solid transparent
+				bottom: 15px
+				border-radius: 10px
+	&__categories-row
+		display: flex
+		justify-content: space-between
+	&__info-row
+		display: flex
+		justify-content: space-between
+		margin-bottom: 30px
+	&__geolocation
+		display: none
+		font-family: $fontFira
+		font-weight: 400
+		font-size: 15px
+		letter-spacing: 1.7px
+		color: $gray
+	&__content-head 
+	&__content-title
+		font-family: $fontFira
+		font-weight: 800
+		font-size: 18px
+		line-height: 26px
+		color: $white
+		text-transform: uppercase
+		position: relative
+		margin-bottom: 14px
+		&::after
+			content: ''
+			position: absolute
+			width: 80px
+			height: 1px
+			background-color: $accent
+			left: 0
+			bottom: -5px
+	&__content-subtitle 
+		font-family: $fontFira
+		font-weight: 400
+		font-size: 16px
+		line-height: 19px
+		color: $white
+	&__content-link
+		margin-top: 4px
+	&__content-item
+		text-align: center
+		img
+			margin-bottom: 8px
+	&__content-number
+		font-family: $fontFira
+		font-weight: 800
+		font-size: 16px
+		line-height: 23px
+		color: $white
+	&__content-name 
+		font-family: $fontFira
+		font-weight: 300
+		font-size: 10px
+		line-height: 12px
+		text-transform: uppercase
+		color: $white
 
 .shuffle-active-button
-    background-color: rgba($accent, 0.8) !important
+	background-color: rgba($accent, 0.8) !important
 
 .map-dot--1
-    top: 350px
-    left: 0
+	top: 350px
+	left: 0
 .map-dot--2
-    top: 270px
-    left: 110px
-    &::before
-        background-image: url('../../img/location.svg')
-        content: ''
-        position: absolute
-        opacity: 0.3
-        background-size: cover
-        width: 14px
-        height: 17px
-        top: -25px
-        right: -15px
+	top: 270px
+	left: 110px
+	&::before
+		background-image: url('../../img/location.svg')
+		content: ''
+		position: absolute
+		opacity: 0.3
+		background-size: cover
+		width: 14px
+		height: 17px
+		top: -25px
+		right: -15px
 .map-dot--3
-    top: 325px
-    left: 270px
+	top: 325px
+	left: 270px
 .map-dot--4
-    top: 480px
-    left: 340px
+	top: 480px
+	left: 340px
 .map-dot--5
-    top: 220px
-    left: 460px
+	top: 220px
+	left: 460px
 .map-dot--6
-    top: 540px
-    left: 520px
+	top: 540px
+	left: 520px
 .map-dot--7
-    top: 360px
-    left: 660px
-    .map-dot__content
-        display: block
+	top: 360px
+	left: 660px
+	.map-dot__content
+		display: block
 .map-dot--8
-    top: 520px
-    left: 900px
+	top: 520px
+	left: 900px
 
 .surf-slide
-    background-position: center
-    background-size: cover
-    z-index: -50
-    &:nth-child(4n + 1)
-        margin-top: 32px
-    &:nth-child(4n + 3)
-        margin-top: 32px
-    &__inner
-        height: 750px
-        width: 100%
-        display: grid
-        grid-template-rows: auto 1fr minmax(80px, auto) !important
-        background-repeat: no-repeat
-        background: rgba(#1C2121, 0.85)
-        transition: all 0.3s 
-        &:hover
-            background: rgba(#1C2121, 0.3) !important
-            z-index: -30
-            .surf-slide__button
-                display: flex
-    &__name
-        padding-top: 72px
-        padding-left: 40px
-        max-width: 150px
-    &__location
-        transform: rotate(180deg)
-        writing-mode: vertical-rl
-        padding-right: 40px
-        align-self: end
-        span
-            font-weight: 100               
-    &__button
-        display: none
-        justify-self: end
-        margin-right: 78px
-        &:hover
-            .logo-gorizontal__active
-                right: 190px !important
-            .logo-gorizontal__static
-                &::before
-                    left: -30% !important
+	background-position: center
+	background-size: cover
+	z-index: -50
+	&:nth-child(4n + 1)
+		margin-top: 32px
+	&:nth-child(4n + 3)
+		margin-top: 32px
+	&__inner
+		height: 750px
+		width: 100%
+		display: grid
+		grid-template-rows: auto 1fr minmax(80px, auto) !important
+		background-repeat: no-repeat
+		background: rgba(#1C2121, 0.85)
+		transition: all 0.3s
+		&:hover
+			background: rgba(#1C2121, 0.3) !important
+			z-index: -30
+			.surf-slide__button
+				display: flex
+	&__name
+		padding-top: 72px
+		padding-left: 40px
+		max-width: 150px
+	&__location
+		transform: rotate(180deg)
+		writing-mode: vertical-rl
+		padding-right: 40px
+		align-self: end
+		span
+			font-weight: 100
+	&__button
+		position: relative
+		justify-self: end
+		margin-right: 78px
+		&:hover
+			.logo-gorizontal__active
+				right: 185px
+			.logo-gorizontal__static
+				&::before
+					left: -6%
 .surf__slider-item--active
-    .surf-slide__button
-        display: flex
-    .surf-slide__inner
-        position: relative
-        background: rgba(#1C2121, 0.3)
-
+	.surf-slide__button
+		display: flex
+	.surf-slide__inner
+		position: relative
+		background: rgba(#1C2121, 0.3)

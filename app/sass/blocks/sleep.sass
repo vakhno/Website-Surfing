@@ -1,138 +1,129 @@
 .sleep 
-    &__losung 
-        transform: translateX(-70px)
-    &__slider 
-    &__slider-wrapper 
-        position: relative
-        width: 100%
-        height: 100%
-        display: flex
-    &__slider-item 
-        position: relative
-        height: 100%
-        min-width: 100%
-        width: 100%
-        &:not(.swiper-slide-active)
-            opacity: 0 !important
-    &__slider-arrows
-        position: absolute
-        top: 100px
-        right: 25px
-        z-index: 100
-    &__fly-companies
-        display: flex
-        justify-content: start
+	&__losung 
+		transform: translateX(-70px)
+	&__slider-wrapper 
+		position: relative
+		width: 100%
+		height: 100%
+		display: flex
+	&__slider-item 
+		position: relative
+		height: 100%
+		min-width: 100%
+		width: 100%
+		&:not(.swiper-slide-active)
+			opacity: 0 !important
+	&__slider-arrows
+		position: absolute
+		top: 100px
+		right: 25px
+		z-index: 100
+	&__fly-companies
+		display: flex
+		justify-content: flex-start
+
 .sleep-slide 
-    &__resort
-        position: relative
-        width: 100%
-        min-height: 780px
-        display: flex
-        justify-content: flex-end
-        background-repeat: no-repeat
-        background-position: left center
-    &__hotel-item-image
-        position: absolute
-        right: 0
-        bottom: 0
-        width: 100%
-        max-width: 430px
-    &__resort-image
-        position: absolute
-        left: 0
-        min-height: 780px
-        height: 100%
-        width: 100%
-        max-width: 1115px
-        background-position: center
-        background-size: cover
-        // box-shadow: inset -60px 110px 10px 90px #171919
-        z-index: -10
-        &::after
-            background: radial-gradient(89.09% 42.09% at 10.87% 43.23%,rgba(41,34,34,0) 0,#171919 100%)
-            position: absolute
-            top: 0
-            left: 0
-            bottom: 0
-            right: 0
-            content: ""
-    &__location-title 
-        justify-content: end
-        margin-right: 26px
-        height: max-content
-    &__flight-info
-        // padding: 0 135px
-        background-repeat: no-repeat
-        background-position: right center
-        padding-bottom: 260px
-    &__fly-companies
-        display: flex
-        justify-content: space-between
-        padding-left: 135px
-        margin: -320px 0 70px 0
-    &__companie-info
-        padding-top: 160px
-        display: flex
-        justify-content: flex-start
-    &__hotel-rating
-        display: flex
-        align-items: flex-end
-        // position: absolute
-        // padding-left: 225px
-        // padding-top: 23px
-    &__hotel-star
-        margin-left: -22px
-        &:first-child
-            margin-left: 0
-    &__flight-categories
-        display: flex
-        justify-content: space-evenly
-        margin-bottom: 65px
-    &__category--1
-        // max-width: 280px
-    &__category--2
-        max-width: 210px
-    &__category--3
-        max-width: 215px
-    &__category--4
-        max-width: 260px
-    &__category-addit-wrapper
-        display: flex
-        flex-direction: column
-    &__calculator-signs
-        display: flex
-        align-items: center
-        align-self: flex-end
-        margin-top: 11px
-    &__calculator-nights-minus
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-right: 16px
-    &__calculator-guests-minus
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-right: 16px
-    &__calculator-guests-plus
-        display: flex
-        justify-content: center
-        align-items: center
-    &__calculator-nights-plus
-        display: flex
-        justify-content: center
-        align-items: center
-    &__button
-        width: 134px
-        margin: 0 auto
-        &:hover
-            .logo-gorizontal__active
-                right: 190px !important
-            .logo-gorizontal__static
-                &::before
-                    left: -30% !important
-
-
-
+	&__resort
+		position: relative
+		width: 100%
+		min-height: 780px
+		display: flex
+		justify-content: flex-end
+		background-repeat: no-repeat
+		background-position: left center
+	&__hotel-item-image
+		position: absolute
+		right: 0
+		bottom: 0
+		width: 100%
+		max-width: 430px
+	&__resort-image
+		position: absolute
+		left: 0
+		min-height: 780px
+		height: 100%
+		width: 100%
+		max-width: 1115px
+		background-position: center
+		background-size: cover
+		z-index: -10
+		&::after
+			background: radial-gradient(89.09% 42.09% at 10.87% 43.23%,rgba(41,34,34,0) 0,#171919 100%)
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			content: ""
+	&__location-title 
+		justify-content: end
+		margin-right: 26px
+		height: max-content
+	&__flight-info
+		background-repeat: no-repeat
+		background-position: right center
+		padding-bottom: 260px
+	&__fly-companies
+		display: flex
+		justify-content: space-between
+		padding-left: 135px
+		margin: -320px 0 70px 0
+	&__companie-info
+		padding-top: 160px
+		display: flex
+		justify-content: flex-start
+	&__hotel-rating
+		display: flex
+		align-items: flex-end
+	&__hotel-star
+		margin-left: -22px
+		&:first-child
+			margin-left: 0
+	&__flight-categories
+		display: flex
+		justify-content: space-evenly
+		margin-bottom: 65px
+	&__category--2
+		max-width: 210px
+	&__category--3
+		max-width: 220px
+	&__category--4
+		max-width: 260px
+	&__category-addit-wrapper
+		display: flex
+		flex-direction: column
+	&__calculator-signs
+		display: flex
+		align-items: center
+		align-self: flex-end
+		margin-top: 11px
+	&__calculator-nights-minus
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 16px
+	&__calculator-guests-minus
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 16px
+	&__calculator-guests-plus
+		display: flex
+		justify-content: center
+		align-items: center
+	&__calculator-nights-plus
+		display: flex
+		justify-content: center
+		align-items: center
+	&__button
+		position: relative
+		width: 134px
+		margin: 0 auto
+		&:hover
+			.logo-gorizontal__active
+				right: 190px
+			.logo-gorizontal__static
+				&::before
+					left: -6%
