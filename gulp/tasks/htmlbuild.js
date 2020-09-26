@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber'); // отслеживание ошибок без прерывания GULP
 const rigger = require('gulp-rigger'); // для подключение к странице ее частей( //= parts/footer.html )
-const validator = require('gulp-w3c-html-validator');
 const path = {
 	dist: { //Куда складывать готовые после сборки файлы
 		html: 'dist/',
@@ -32,6 +31,5 @@ module.exports = function htmlbuild() {
 	return gulp.src(path.app.html)
 		.pipe(plumber())
 		.pipe(rigger())
-		.pipe(validator())
 		.pipe(gulp.dest(path.dist.html))
 };
